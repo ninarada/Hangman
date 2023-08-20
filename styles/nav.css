@@ -1,0 +1,42 @@
+/* nav + footer  */
+
+body {
+    font-family: 'Sora', sans-serif;;
+    margin:0;
+
+    --primary-color: #A9907E;
+    --light-primary-color: #E4DCCF;
+
+    --secondary-color: #406343;
+    --light-secondary-color: #ABC4AA;
+    
+    background-color: var(--light-primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header a {
+    text-decoration: none;
+    padding: 5px 16px;
+    color: var(--secondary-color);
+}
+
+header a:first-child {
+    float: left;
+}
+
+header a:not(:first-child) {
+    float: right;
+}
+
+header a:not(:first-child):hover {
+    color: black;
+}

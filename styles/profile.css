@@ -1,0 +1,128 @@
+body {
+    --primary-color: #A9907E;
+    --light-primary-color: #E4DCCF;
+
+    --secondary-color: #406343;
+    --light-secondary-color: #ABC4AA;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 20px;
+    place-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 50px;
+    height: 90vh;
+}
+
+main div {
+    background-color: var(--light-secondary-color);
+    width: 90%;
+    height: 80%;
+    animation: fadeInAnimation ease 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+main #user-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+   
+}
+
+main #user-container p{
+    padding: 5px 20px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+
+main #user-container span{
+    color: #406343a4;
+    margin-right: 20px;
+}
+
+main #user-container .log-out-click{
+    color: #406343a4;
+    background-color: var(--light-secondary-color);
+    border: none;
+    font-size: medium;
+    margin-top: 20px;
+}
+
+main #user-container .log-out-click:hover{
+    cursor: pointer;
+    color: #406343;
+}
+
+/*    -----------------    */
+
+main #big-stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main #big-stats-container #stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #big-stats-container #stats-container #stats-table {
+    background-color: #98b198dd;
+    padding: 10px 10px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 1px 1px 5px #0f103f4f;
+}
+
+#stats-table thead {
+    text-align: center;
+    font-style: italic;
+    font-size:x-large;
+    font-style: oblique;
+    text-decoration: underline;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+     }
+}
+
+@media screen and (max-width: 1000px){
+    main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #user-container, #big-stats-container {
+        margin-bottom: 20px;
+    }
+
+    main #user-container {
+        display: flexbox;
+        align-content: center;
+        justify-items: center;
+        height: max-content;
+        padding: 30px 0px;
+    }
+
+    main #user-container p{
+       width: fit-content;
+    }
+}
