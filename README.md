@@ -4,6 +4,8 @@
 
 The game was made as a project for bachelor thesis.
 
+<img width="200" src="(https://github.com/ninarada/Hangman/assets/92435431/4db8329c-bc00-4271-893f-6897cdca1a97)">
+
 ![image](https://github.com/ninarada/Hangman/assets/92435431/fd802193-46de-43df-9f29-97c71df8ae99)
 
 ![image](https://github.com/ninarada/Hangman/assets/92435431/fd1286d7-6fc4-40c1-b0a6-bcea96a8b3eb)
